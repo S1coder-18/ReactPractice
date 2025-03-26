@@ -1,5 +1,5 @@
-//This is why we use useState hook because it is tracked by react and whatever changes, it re-renders 
-// into dom and ui.
+//Here, I am handling the case if we count>0 then only it should decrement the value by 1.
+//This case is handling negative values.
 
 import { useState } from 'react';
 
@@ -11,8 +11,12 @@ function Counter1(){
         setCount(count+1);
     }
 
+    //Here, I am handling the case if we count>0 then only it should decrement the value by 1.
+    //This case is handling negative values.
     const handleDecrement = () =>{
-        setCount(count-1);
+        if(count>0){
+            setCount(count-1);
+        }
     }
     
 
