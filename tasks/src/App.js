@@ -5,7 +5,7 @@ import Counter1 from './components/counter1/Counter1';
 function App() {
   return (
     <div className="App">
-      <h1>Using Local Variables</h1>
+      <h1>Using State Variables</h1>
       <Counter1 />
     </div>
   );
