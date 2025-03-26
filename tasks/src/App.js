@@ -1,10 +1,12 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Counter from './components/counter/Counter';
 
 function App() {
   return (
     <div className="App">
-      <h1>Nothing right now</h1>
+      <h1>Using Local Variables</h1>
+      <Counter />
     </div>
   );
 }
