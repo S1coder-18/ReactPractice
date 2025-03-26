@@ -1,0 +1,11 @@
+.container {
+    position: absolute;  /* Positions the element relative to the nearest positioned ancestor (or the document if none exists) */
+    top: 50px;           /* Moves the element 50px down from the top of its nearest positioned ancestor */
+    left: 10px;          /* Moves the element 10px from the left of its nearest positioned ancestor */
+    padding-left: 10px;  /* Adds 10px of padding inside the left side of the container */
+}
+  
+.fruit-list {
+    padding: 10px;       /* Adds 10px of padding inside the list */
+    color: blueviolet;   /* Sets the text color to blueviolet */
+}
