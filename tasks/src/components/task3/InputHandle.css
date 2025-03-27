@@ -1,0 +1,16 @@
+
+ .input-field {
+    display: flex;    /* centers the input field*/
+    justify-content: center;   /* centers the input firld hoizantelly*/
+    align-items: center;       /* centers the input fieldvertically*/
+
+}
+
+input {
+    width: 350px;  /* set the width */
+    height: 25px;  /* set the height */
+    text-align:left;  /* it will align the text to the left of input box  */
+    padding-left: 50px; /* give the space to the text to the left of input firld 50px */
+    font-size: 15px;    /* set the font-size of text */
+    border-radius: 1px solid #ccc;
+}
