@@ -9,6 +9,7 @@ function Counter1(){
 
     const handleIncrement =() => {
         setCount(count+1);
+        
     }
 
     //Here, I am handling the case if we count>0 then only it should decrement the value by 1.
