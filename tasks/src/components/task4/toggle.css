@@ -1,0 +1,23 @@
+.btn {
+    color: blue;
+    margin-left: 100vh;
+    
+    
+}
+
+.btn-btn {
+    font-size: 4vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.txt {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blueviolet;
+    font-size: 4vh;
+    margin-top: 5vh;
+}
+
+.txt :hover {
+    color: brown;
+}
