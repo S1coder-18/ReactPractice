@@ -68,6 +68,29 @@
 
 //5. We can't do in this way, It gives syntax error because we can't return like this 
 //FUnction declaration is an statement , because it doesn't returnt he value directly.
+// function StatementExpression(){
+
+    
+
+//     return(
+//         <>
+//         {
+//             function add(){
+//                 let name = "Sachin "
+//                 return name;
+//             }
+//             return <h1>{add()}</h1>
+//         }
+//         </>
+//     ) 
+
+
+// }
+
+// export default StatementExpression;
+
+//5. Instead of that we can write like this  ... It will work properly.
+
 function StatementExpression(){
 
     
@@ -75,11 +98,13 @@ function StatementExpression(){
     return(
         <>
         {
-            function add(){
-                let name = "Sachin "
-                return name;
-            }
-            return <h1>{add()}</h1>
+            (()=>{
+                function add(){
+                    let name = "Sachin "
+                    return name;
+                }
+                return <h1>{add()}</h1>
+            })()
         }
         </>
     ) 
