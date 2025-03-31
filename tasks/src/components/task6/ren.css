@@ -1,0 +1,16 @@
+h2{
+    text-align: center;
+    color: blueviolet;
+}
+
+button {
+    cursor: pointer;
+    color: blue;
+    display: flex;
+    justify-self: center;
+    
+}
+
+h2:hover{
+    color:antiquewhite;
+}

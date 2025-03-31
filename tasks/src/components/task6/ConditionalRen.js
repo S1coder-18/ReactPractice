@@ -25,7 +25,7 @@
 //He is loggedIn already then he will loggedOut. 
 //Inside ternary o/p we will pass one another button instead of  welcome user message.
 import { useState } from "react"
-
+import './ren.css';
 function ConditionalRen(){
 
     const[isLoggedIn, setIsLoggedIn] = useState(false);
@@ -37,8 +37,9 @@ function ConditionalRen(){
             isLoggedIn ? <button onClick={()=>{setIsLoggedIn(false)}}>LogOut</button>: 
             <button onClick={()=>{setIsLoggedIn(true)}}>LogIn</button>
         }
-        <h2>{isLoggedIn ? "User is Logged In" : "Please Login to continue!."}</h2>
         
+        <h2>{isLoggedIn ? "User is Logged In" : "Please Login to continue!."}</h2>
+       
         </>
     )
 }
