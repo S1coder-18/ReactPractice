@@ -23,6 +23,28 @@
 //3. If we want to decalre the variable inside jsx then there is case we can declare using IIFE because 
 // it invokes immediately and return the jsx inside jsx. Let's see how --->
 
+// function StatementExpression(){
+
+    
+
+//     return(
+//         <>
+//         {
+//             (()=>{
+//                 let name = "Sachin";
+//                 return <h1>{name}</h1>;
+//             })()
+//         }
+//         </>
+//     ) 
+
+
+// }
+
+// export default StatementExpression;
+
+//4. And if no return statment , nothing will display in the UI>
+
 function StatementExpression(){
 
     
@@ -32,7 +54,7 @@ function StatementExpression(){
         {
             (()=>{
                 let name = "Sachin";
-                return <h1>{name}</h1>;
+                
             })()
         }
         </>
