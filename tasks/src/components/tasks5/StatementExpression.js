@@ -92,6 +92,33 @@
 //5. Instead of that we can write like this  ... It will work properly.
 //Why it is working because --> We are returing jsx inside jsx so it works fine coz of IIFE it invokes immediately.
 
+// function StatementExpression(){
+
+    
+
+//     return(
+//         <>
+//         {
+//             (()=>{
+//                 function add(){
+//                     let name = "Sachin "
+//                     return name;
+//                 }
+//                 return <h1>{add()}</h1>
+//             })()
+//         }
+//         </>
+//     ) 
+
+
+// }
+
+// export default StatementExpression;
+
+//6.There are other ways as well , They are lil similar like IIFE ... we can use Anonymous function 
+//The function is an anonymous function expression.It is immediately invoked to return JSX.
+
+
 function StatementExpression(){
 
     
@@ -99,12 +126,9 @@ function StatementExpression(){
     return(
         <>
         {
-            (()=>{
-                function add(){
-                    let name = "Sachin "
-                    return name;
-                }
-                return <h1>{add()}</h1>
+            (function(){
+                let name = "Raj";
+                return <h1>{name}</h1>
             })()
         }
         </>
