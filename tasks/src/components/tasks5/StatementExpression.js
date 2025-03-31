@@ -90,6 +90,7 @@
 // export default StatementExpression;
 
 //5. Instead of that we can write like this  ... It will work properly.
+//Why it is working because --> We are returing jsx inside jsx so it works fine coz of IIFE it invokes immediately.
 
 function StatementExpression(){
 
