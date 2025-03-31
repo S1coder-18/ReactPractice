@@ -143,6 +143,24 @@
 //creates function at runtime.It returns jsx as string which react can interpret directly.
 //And we will wrap in side any tag then tag also will be shown in the UI because of string returns.
 
+// function StatementExpression(){
+
+    
+
+//     return(
+//         <>
+//         {
+//             new Function("return 'Harshitha'")()
+//         }
+//         </>
+//     ) 
+
+
+// }
+
+// export default StatementExpression;
+
+//8. Named expression also works fine here.....
 function StatementExpression(){
 
     
@@ -150,7 +168,10 @@ function StatementExpression(){
     return(
         <>
         {
-            new Function("return 'Harshitha'")()
+           (function add(){
+            let name = "Harshitha"
+            return <h1>{name}</h1>
+           })()
         }
         </>
     ) 
@@ -159,4 +180,3 @@ function StatementExpression(){
 }
 
 export default StatementExpression;
-
