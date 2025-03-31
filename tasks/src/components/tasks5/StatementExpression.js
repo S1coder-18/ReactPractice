@@ -45,6 +45,29 @@
 
 //4. And if no return statment , nothing will display in the UI>
 
+// function StatementExpression(){
+
+    
+
+//     return(
+//         <>
+//         {
+//             (()=>{
+//                 let name = "Sachin";
+                
+//             })()
+//         }
+//         </>
+//     ) 
+
+
+// }
+
+// export default StatementExpression;
+
+
+//5. We can't do in this way, It gives syntax error because we can't return like this 
+//FUnction declaration is an statement , because it doesn't returnt he value directly.
 function StatementExpression(){
 
     
@@ -52,10 +75,11 @@ function StatementExpression(){
     return(
         <>
         {
-            (()=>{
-                let name = "Sachin";
-                
-            })()
+            function add(){
+                let name = "Sachin "
+                return name;
+            }
+            return <h1>{add()}</h1>
         }
         </>
     ) 
