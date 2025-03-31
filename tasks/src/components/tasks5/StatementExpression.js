@@ -3,10 +3,11 @@
 
 function StatementExpression(){
 
-    let name = "Sachin";
+    
 
     return(
         <>
+        {let name = "Sachin"}
         <h1>{name}</h1>
         </>
     ) 
@@ -17,3 +18,4 @@ function StatementExpression(){
 export default StatementExpression;
 
 //1. When we declare variable outside then we can use this inside jsx.
+//2. If we declare the variable inside the jsx then it gives the syntax error.
