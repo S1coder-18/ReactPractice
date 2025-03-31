@@ -119,6 +119,30 @@
 //The function is an anonymous function expression.It is immediately invoked to return JSX.
 
 
+// function StatementExpression(){
+
+    
+
+//     return(
+//         <>
+//         {
+//             (function(){
+//                 let name = "Raj";
+//                 return <h1>{name}</h1>
+//             })()
+//         }
+//         </>
+//     ) 
+
+
+// }
+
+// export default StatementExpression;
+
+//7. Also we can use function constructor, Why it will work because function constructor 
+//creates function at runtime.It returns jsx as string which react can interpret directly.
+//And we will wrap in side any tag then tag also will be shown in the UI because of string returns.
+
 function StatementExpression(){
 
     
@@ -126,10 +150,7 @@ function StatementExpression(){
     return(
         <>
         {
-            (function(){
-                let name = "Raj";
-                return <h1>{name}</h1>
-            })()
+            new Function("return 'Harshitha'")()
         }
         </>
     ) 
@@ -138,3 +159,4 @@ function StatementExpression(){
 }
 
 export default StatementExpression;
+
