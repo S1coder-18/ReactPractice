@@ -1,7 +1,19 @@
 .App {
   text-align:left;
   color:blue;
+  
 }
+
+.img {
+  display: flex;
+  justify-content: center;
+ 
+  height: 300px;
+  cursor: pointer;/**/
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5); /*horizental,vertical,the larger the value the more blurred the shadow*/
+  
+}
+
 
 .App-logo {
   height: 40vmin;

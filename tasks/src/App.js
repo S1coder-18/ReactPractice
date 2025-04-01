@@ -8,10 +8,11 @@ import InputHandle from './components/task3/InputHandle';
 import Toggle from './components/task4/Toggle';
 import ConditionalRen from './components/task6/ConditionalRen';
 import StatementExpression from './components/tasks5/StatementExpression';
+import myImage from './assests/Earth.jpg';
 function App() {
   return (
     <div className="App">
-      <h1>Conditional-Rendering</h1>
+      <h1>Ways of importing images</h1>
       {/* <Renderlist /> */}
       {/* <Counter1 /> */}
       {/* <Counter1 /> */}
@@ -20,6 +21,10 @@ function App() {
       {/* <Toggle /> */}
       {/* <StatementExpression /> */}
       <ConditionalRen />
+      <div className='img'>
+      <img src={myImage} alt='myImage'/>
+      </div>
+
       
       
     </div>
@@ -27,3 +32,7 @@ function App() {
 }
 
 export default App;
+
+//1. I have added the image inside assets folder and assets folder i have created and 
+// then imported the image from that folder and myImage is a variable that holds the path to the image file.
+// I used the img tag and src attribute to show the image in the UI.
